@@ -138,7 +138,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'ZeroByteCourier.wsgi.application'
+WSGI_APPLICATION = 'ZeroByteCourier.wsgi.app'
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -214,7 +214,6 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-STATICSTORAGE = 'whienoise.storage.CompressedMainfestStaticFileStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
