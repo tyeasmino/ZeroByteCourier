@@ -137,7 +137,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'ZeroByteCourier.wsgi.app'
+WSGI_APPLICATION = 'ZeroByteCourier.wsgi.application'
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
