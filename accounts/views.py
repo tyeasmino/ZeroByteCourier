@@ -31,7 +31,7 @@ class UserRegistrationApiView(APIView):
             # FRONTEND_URL = "https://skillcrafter1.netlify.app"  # or use environment variables
 
             # confirm_link = f"{FRONTEND_URL}/accounts/active/{uid}/{token}"
-            confirm_link = f"https://tailor-hub-backend.vercel.app/accounts/active/{uid}/{token}"
+            confirm_link = f"https://zerobyte-courier.vercel.app/accounts/active/{uid}/{token}"
 
             email_subject = "Confirm Your Email"
             email_body = render_to_string('confirm_email.html', {'confirm_link': confirm_link})
@@ -52,7 +52,7 @@ def activate(request, uid64, token):
     if user is not None and default_token_generator.check_token(user, token):
         user.is_active = True
         user.save()
-        return redirect('https://tailor-hub-frontend.vercel.app/login')
+        return redirect('https://zerobyte-courier.vercel.app/api-auth/login/')
     else:
         return Response({'detail': 'Activation failed. The link may be invalid or expired.'}, status=status.HTTP_400_BAD_REQUEST)
 
