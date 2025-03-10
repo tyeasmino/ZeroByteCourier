@@ -6,7 +6,6 @@ Create a RESTful API using Django Rest Framework to manage packages in a courier
 ## Installation Instructions
 
 1. Clone the repository:
-
    ```bash
    git clone https://github.com/tyeasmino/ZeroByteCourier.git
    cd ZeroByteCourier
@@ -55,46 +54,44 @@ The server will be available at: http://127.0.0.1:8000/
     
 
 
+## Usage Examples
+### Admin Login:
+### Local URL: http://127.0.0.1:8000/admin/
+	Username: admin
+	Password: admin for local
 
+### if you use live link: https://zerobyte-courier.vercel.app/admin
+	username: zerobyte  
+	password: zerobyte
+	then only http://127.0.0.1:8000 will be replace by https://zerobyte-courier.vercel.app/
 
-Usage Examples
-Admin Login:
+### Other user login:
+	Password: abcd1234%
 
-URL: http://127.0.0.1:8000/admin/
-    Username: admin
-    Password: admin for local
+### Registration Link: 
+	http://127.0.0.1:8000/accounts/register/
 
-if you use live link: https://zerobyte-courier.vercel.app/admin
-    username: zerobyte  
-    password: zerobyte
-    then only http://127.0.0.1:8000 will be replace by https://zerobyte-courier.vercel.app/
+### Login Link: 
+	http://127.0.0.1:8000/api-auth/login/
 
-Other user login:
-    Password: abcd1234%
-
-Registration Link: http://127.0.0.1:8000/accounts/register/
-
-Login Link: http://127.0.0.1:8000/api-auth/login/
-
-Office Related Links
+### Office Related Links
     Locations: http://127.0.0.1:8000/office-related/locations/
     Branches: http://127.0.0.1:8000/office-related/branches/
     Parcels: http://127.0.0.1:8000/office-related/parcels/
     Parcels Receiving: http://127.0.0.1:8000/office-related/parcels-receiving/
-Note: If you're not logged in, "parcels" and "parcels-receiving" will not display anything.
-*** One More thing, if you create account that link will show you live link related url and if you click the link account will not active and you will get error
+	Note: If you're not logged in, "parcels" and "parcels-receiving" will not display anything.
+	*** One More thing, if you create account that link will show you live link related url and if you click the link account will not active and you will get error
 
 
-Tracking Parcel Status
-After creating a parcel, you can track it using the tracking number. For example:
-    http://127.0.0.1:8000/office-related/tracking/WULRFT/
-    http://127.0.0.1:8000/office-related/tracking/VJ5YSV/
+### Tracking Parcel Status
+	After creating a parcel, you can track it using the tracking number. For example:
+    	http://127.0.0.1:8000/office-related/tracking/WULRFT/
+    	http://127.0.0.1:8000/office-related/tracking/VJ5YSV/
 
-For testing, you can try the following tracking codes: WULRFT, VJ5YSV, UTGM09, OKUN4O. Just replace the tracking ID after tracking/{id}.
+	For testing, you can try the following tracking codes: WULRFT, VJ5YSV, UTGM09, OKUN4O. Just replace the tracking ID after tracking/{id}.
+	Note: If you're sending a parcel, you don't need to register to track its status.
 
-Note: If you're sending a parcel, you don't need to register to track its status.
-
-Features
+### Features
     All users are office-related staff.
     A branch is automatically created when a user registers.
     Users can update branch details.
@@ -103,9 +100,9 @@ Features
     Users can update the status of receiving parcels (e.g., arrived, received, delivered).
 
 
-Technologies Used
-Django Rest Framework 
+### Technologies Used
+	Django Rest Framework 
 
-For Free Hosting Used
-Database: Railway
-Backend: Vercel
+### For Free Hosting Used
+	Database: Railway
+	Backend: Vercel
